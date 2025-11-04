@@ -1,0 +1,31 @@
+{
+  "name": "@ultimate-social-chef/jobs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'Lint not configured'",
+    "demo-seed": "tsx src/demo-seed.ts",
+    "discover": "tsx src/discover.ts",
+    "rank-creators": "tsx src/rank-creators.ts",
+    "pick-top10": "tsx src/pick-top10.ts",
+    "extract": "tsx src/extract.ts"
+  },
+  "dependencies": {
+    "@ultimate-social-chef/db": "workspace:*",
+    "@ultimate-social-chef/shared": "workspace:*",
+    "@ultimate-social-chef/ranker": "workspace:*",
+    "@ultimate-social-chef/chef-ie": "workspace:*",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.36.4",
+    "nanoid": "^5.0.9"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

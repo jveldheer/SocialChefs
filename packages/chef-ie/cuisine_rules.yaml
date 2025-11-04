@@ -1,0 +1,365 @@
+# Cuisine classification rules
+# Each cuisine has keywords (ingredients, dishes, techniques) that signal it
+
+Italian:
+  ingredients:
+    - pasta
+    - spaghetti
+    - penne
+    - linguine
+    - fettuccine
+    - rigatoni
+    - parmesan
+    - parmigiano
+    - pecorino
+    - mozzarella
+    - ricotta
+    - prosciutto
+    - pancetta
+    - balsamic
+    - basil
+    - oregano
+    - marinara
+  dishes:
+    - carbonara
+    - bolognese
+    - lasagna
+    - risotto
+    - gnocchi
+    - bruschetta
+    - caprese
+    - tiramisu
+    - panna cotta
+    - pizza
+    - focaccia
+    - ciabatta
+
+Chinese:
+  ingredients:
+    - soy sauce
+    - rice wine
+    - shaoxing
+    - sesame oil
+    - ginger
+    - scallion
+    - bok choy
+    - wonton
+    - five spice
+    - szechuan
+    - sichuan
+    - oyster sauce
+    - hoisin
+  dishes:
+    - stir fry
+    - fried rice
+    - lo mein
+    - chow mein
+    - kung pao
+    - mapo tofu
+    - dim sum
+    - dumpling
+    - spring roll
+    - wonton soup
+
+Japanese:
+  ingredients:
+    - soy sauce
+    - mirin
+    - sake
+    - dashi
+    - miso
+    - nori
+    - wasabi
+    - ginger
+    - panko
+    - furikake
+    - bonito
+  dishes:
+    - sushi
+    - sashimi
+    - ramen
+    - udon
+    - soba
+    - tempura
+    - teriyaki
+    - tonkatsu
+    - yakitori
+    - okonomiyaki
+    - takoyaki
+    - miso soup
+
+Korean:
+  ingredients:
+    - gochujang
+    - gochugaru
+    - kimchi
+    - doenjang
+    - sesame oil
+    - perilla
+    - korean chili
+  dishes:
+    - bibimbap
+    - bulgogi
+    - galbi
+    - japchae
+    - tteokbokki
+    - Korean bbq
+    - kbbq
+
+Indian:
+  ingredients:
+    - curry
+    - garam masala
+    - turmeric
+    - cumin
+    - coriander
+    - cardamom
+    - ghee
+    - paneer
+    - naan
+    - basmati
+    - tikka
+    - tandoori
+    - masala
+    - chaat masala
+    - fenugreek
+  dishes:
+    - butter chicken
+    - tikka masala
+    - biryani
+    - korma
+    - vindaloo
+    - samosa
+    - pakora
+    - dal
+    - palak paneer
+
+Mexican:
+  ingredients:
+    - tortilla
+    - cilantro
+    - lime
+    - jalapeño
+    - chipotle
+    - poblano
+    - cotija
+    - queso fresco
+    - salsa
+    - guacamole
+    - pico de gallo
+    - cumin
+    - mexican oregano
+  dishes:
+    - taco
+    - burrito
+    - quesadilla
+    - enchilada
+    - fajita
+    - nachos
+    - tamale
+    - mole
+    - carne asada
+    - carnitas
+    - al pastor
+
+Thai:
+  ingredients:
+    - fish sauce
+    - thai basil
+    - galangal
+    - lemongrass
+    - kaffir lime
+    - coconut milk
+    - palm sugar
+    - thai chili
+    - tamarind
+  dishes:
+    - pad thai
+    - green curry
+    - red curry
+    - tom yum
+    - tom kha
+    - larb
+    - pad see ew
+    - massaman
+
+French:
+  ingredients:
+    - butter
+    - cream
+    - wine
+    - cognac
+    - gruyere
+    - brie
+    - camembert
+    - dijon
+    - herbes de provence
+    - tarragon
+    - shallot
+  dishes:
+    - croissant
+    - baguette
+    - quiche
+    - ratatouille
+    - coq au vin
+    - bouillabaisse
+    - beef bourguignon
+    - crepe
+    - souffle
+    - mousse
+    - creme brulee
+
+American:
+  ingredients:
+    - bacon
+    - bbq sauce
+    - ranch
+    - american cheese
+    - maple syrup
+  dishes:
+    - burger
+    - hamburger
+    - hot dog
+    - fried chicken
+    - mac and cheese
+    - bbq ribs
+    - brisket
+    - pulled pork
+    - coleslaw
+    - cornbread
+    - pancake
+    - waffle
+    - apple pie
+    - brownies
+    - chocolate chip cookie
+
+Mediterranean:
+  ingredients:
+    - olive oil
+    - lemon
+    - feta
+    - olives
+    - tahini
+    - za'atar
+    - sumac
+  dishes:
+    - hummus
+    - falafel
+    - tabbouleh
+    - baba ganoush
+    - shawarma
+    - kebab
+    - pita
+
+"Middle Eastern":
+  ingredients:
+    - tahini
+    - za'atar
+    - sumac
+    - pomegranate molasses
+    - harissa
+    - preserved lemon
+    - saffron
+    - dates
+  dishes:
+    - hummus
+    - falafel
+    - shawarma
+    - kebab
+    - kibbeh
+    - baklava
+
+Vietnamese:
+  ingredients:
+    - fish sauce
+    - nuoc mam
+    - vietnamese mint
+    - rice noodles
+    - star anise
+  dishes:
+    - pho
+    - banh mi
+    - spring roll
+    - bun
+    - vietnamese coffee
+
+Spanish:
+  ingredients:
+    - saffron
+    - chorizo
+    - manchego
+    - pimenton
+    - sherry
+  dishes:
+    - paella
+    - tapas
+    - gazpacho
+    - tortilla española
+    - patatas bravas
+    - churros
+
+Greek:
+  ingredients:
+    - feta
+    - tzatziki
+    - oregano
+    - olive oil
+    - lemon
+  dishes:
+    - gyro
+    - souvlaki
+    - moussaka
+    - spanakopita
+    - greek salad
+    - baklava
+
+Caribbean:
+  ingredients:
+    - jerk seasoning
+    - scotch bonnet
+    - allspice
+    - plantain
+    - coconut
+  dishes:
+    - jerk chicken
+    - rice and peas
+    - curry goat
+    - roti
+
+African:
+  ingredients:
+    - berbere
+    - harissa
+    - couscous
+    - injera
+  dishes:
+    - tagine
+    - jollof rice
+    - injera
+    - bobotie
+
+British:
+  ingredients:
+    - marmite
+    - hp sauce
+    - stilton
+  dishes:
+    - fish and chips
+    - shepherd's pie
+    - bangers and mash
+    - sunday roast
+    - yorkshire pudding
+    - spotted dick
+
+German:
+  ingredients:
+    - sauerkraut
+    - bratwurst
+    - schnitzel
+    - beer
+  dishes:
+    - schnitzel
+    - bratwurst
+    - sauerkraut
+    - pretzel
+    - strudel

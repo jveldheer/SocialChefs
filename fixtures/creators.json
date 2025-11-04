@@ -1,0 +1,97 @@
+[
+  {
+    "id": "creator_1",
+    "platform": "youtube",
+    "handle": "@ThePastaQueen",
+    "displayName": "Pasta Queen",
+    "avatarUrl": "https://via.placeholder.com/150/FF6B6B/FFFFFF?text=PQ",
+    "followers": 850000,
+    "creatorScore": 0.92,
+    "creatorScoreBreakdown": {
+      "vm": 0.95,
+      "ed": 0.88,
+      "cons": 0.91,
+      "act": 0.94,
+      "nov": 0.87,
+      "auth": 0.96,
+      "total": 0.92
+    },
+    "cuisinePrimary": "Italian"
+  },
+  {
+    "id": "creator_2",
+    "platform": "tiktok",
+    "handle": "@KoreanFoodBae",
+    "displayName": "Korean Food Bae",
+    "avatarUrl": "https://via.placeholder.com/150/4ECDC4/FFFFFF?text=KFB",
+    "followers": 1200000,
+    "creatorScore": 0.90,
+    "creatorScoreBreakdown": {
+      "vm": 0.98,
+      "ed": 0.92,
+      "cons": 0.85,
+      "act": 0.89,
+      "nov": 0.91,
+      "auth": 0.93,
+      "total": 0.90
+    },
+    "cuisinePrimary": "Korean"
+  },
+  {
+    "id": "creator_3",
+    "platform": "youtube",
+    "handle": "@TacoTuesday247",
+    "displayName": "Taco Tuesday 24/7",
+    "avatarUrl": "https://via.placeholder.com/150/F7DC6F/FFFFFF?text=TT",
+    "followers": 650000,
+    "creatorScore": 0.87,
+    "creatorScoreBreakdown": {
+      "vm": 0.89,
+      "ed": 0.85,
+      "cons": 0.88,
+      "act": 0.91,
+      "nov": 0.84,
+      "auth": 0.90,
+      "total": 0.87
+    },
+    "cuisinePrimary": "Mexican"
+  },
+  {
+    "id": "creator_4",
+    "platform": "tiktok",
+    "handle": "@CurryCraze",
+    "displayName": "Curry Craze",
+    "avatarUrl": "https://via.placeholder.com/150/F39C12/FFFFFF?text=CC",
+    "followers": 920000,
+    "creatorScore": 0.89,
+    "creatorScoreBreakdown": {
+      "vm": 0.91,
+      "ed": 0.87,
+      "cons": 0.89,
+      "act": 0.92,
+      "nov": 0.86,
+      "auth": 0.91,
+      "total": 0.89
+    },
+    "cuisinePrimary": "Indian"
+  },
+  {
+    "id": "creator_5",
+    "platform": "youtube",
+    "handle": "@SushiSensei",
+    "displayName": "Sushi Sensei",
+    "avatarUrl": "https://via.placeholder.com/150/E74C3C/FFFFFF?text=SS",
+    "followers": 780000,
+    "creatorScore": 0.85,
+    "creatorScoreBreakdown": {
+      "vm": 0.87,
+      "ed": 0.84,
+      "cons": 0.86,
+      "act": 0.88,
+      "nov": 0.82,
+      "auth": 0.89,
+      "total": 0.85
+    },
+    "cuisinePrimary": "Japanese"
+  }
+]

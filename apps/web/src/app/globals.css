@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900;
+  }
+}
+
+@layer utilities {
+  .print-hidden {
+    @media print {
+      display: none;
+    }
+  }
+
+  .print-visible {
+    display: none;
+    @media print {
+      display: block;
+    }
+  }
+}
+
+/* Print stylesheet for recipes */
+@media print {
+  body {
+    @apply bg-white;
+  }
+
+  header,
+  nav,
+  .no-print {
+    display: none;
+  }
+
+  .print-page-break {
+    page-break-before: always;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "ultimate-social-chef",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-grade monorepo for discovering, ranking, and extracting recipes from short-form cooking content",
+  "license": "MIT",
+  "author": "Ultimate Social Chef Team",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "demo-seed": "pnpm --filter db seed && pnpm --filter jobs demo-seed",
+    "discover": "pnpm --filter jobs discover",
+    "rank-creators": "pnpm --filter jobs rank-creators",
+    "pick-top10": "pnpm --filter jobs pick-top10",
+    "extract": "pnpm --filter jobs extract",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^2.3.3",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@8.15.4"
+}

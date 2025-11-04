@@ -1,0 +1,184 @@
+[
+  {
+    "id": "video_1",
+    "platformId": "yt_abc123",
+    "creatorId": "creator_1",
+    "url": "https://youtube.com/shorts/abc123",
+    "title": "Easy 5-Ingredient Cacio e Pepe",
+    "description": "The creamiest cacio e pepe you'll ever make! Just pasta, pecorino, black pepper, pasta water, and a pinch of salt. Mix the cheese with pasta water first, then toss with hot pasta. The key is the emulsion! Serves 2. Ready in 15 minutes.",
+    "publishedAt": "2024-10-15T14:30:00Z",
+    "durationSec": 58,
+    "stats": {
+      "views": 450000,
+      "likes": 38000,
+      "comments": 1200,
+      "shares": 3400,
+      "hoursSincePost": 720
+    },
+    "hashtags": ["#pasta", "#italian", "#recipe", "#cooking", "#cacioepepe", "#easyrecipe"],
+    "recipeScore": 0.94,
+    "recipeScoreBreakdown": {
+      "perf": 0.89,
+      "act": 0.98,
+      "rec": 0.85,
+      "total": 0.94
+    },
+    "embedHtml": "<iframe width=\"315\" height=\"560\" src=\"https://www.youtube.com/embed/abc123\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+  },
+  {
+    "id": "video_2",
+    "platformId": "yt_def456",
+    "creatorId": "creator_1",
+    "url": "https://youtube.com/shorts/def456",
+    "title": "Authentic Italian Carbonara",
+    "description": "Real carbonara with guanciale, pecorino, eggs, and black pepper. No cream! Cook guanciale until crispy, mix eggs with cheese, toss with hot pasta off heat. The residual heat cooks the eggs perfectly. Serves 4. Takes 20 minutes.",
+    "publishedAt": "2024-09-22T10:15:00Z",
+    "durationSec": 60,
+    "stats": {
+      "views": 620000,
+      "likes": 52000,
+      "comments": 1800,
+      "shares": 4500,
+      "hoursSincePost": 1200
+    },
+    "hashtags": ["#carbonara", "#italian", "#pasta", "#recipe", "#authentic"],
+    "recipeScore": 0.96,
+    "recipeScoreBreakdown": {
+      "perf": 0.92,
+      "act": 0.99,
+      "rec": 0.78,
+      "total": 0.96
+    },
+    "embedHtml": "<iframe width=\"315\" height=\"560\" src=\"https://www.youtube.com/embed/def456\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+  },
+  {
+    "id": "video_3",
+    "platformId": "tt_ghi789",
+    "creatorId": "creator_2",
+    "url": "https://tiktok.com/@KoreanFoodBae/video/789",
+    "title": "Korean Fried Chicken (KFC) - Super Crispy!",
+    "description": "Double-fried Korean chicken that's insanely crispy! Marinate chicken in ginger, garlic, soy sauce for 30 minutes. Coat in cornstarch, fry at 350°F for 8 minutes, rest 5 minutes, fry again at 375°F for 5 minutes. Toss in gochujang glaze. Serves 3-4.",
+    "publishedAt": "2024-10-28T18:45:00Z",
+    "durationSec": 59,
+    "stats": {
+      "views": 890000,
+      "likes": 78000,
+      "comments": 2400,
+      "shares": 6200,
+      "hoursSincePost": 240
+    },
+    "hashtags": ["#koreanfood", "#friedchicken", "#kfc", "#recipe", "#cooking", "#crispy"],
+    "recipeScore": 0.93,
+    "recipeScoreBreakdown": {
+      "perf": 0.95,
+      "act": 0.95,
+      "rec": 0.92,
+      "total": 0.93
+    },
+    "embedHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@KoreanFoodBae/video/789\"><section></section></blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>"
+  },
+  {
+    "id": "video_4",
+    "platformId": "tt_jkl012",
+    "creatorId": "creator_2",
+    "url": "https://tiktok.com/@KoreanFoodBae/video/012",
+    "title": "10-Minute Kimchi Fried Rice",
+    "description": "Quick and delicious kimchi fried rice! Use day-old rice, kimchi, gochujang, sesame oil, and top with a fried egg. Fry kimchi first for 2 minutes, add rice and gochujang, stir-fry for 5 minutes. Top with egg and sesame seeds. Serves 2. Perfect weeknight dinner!",
+    "publishedAt": "2024-10-05T12:20:00Z",
+    "durationSec": 45,
+    "stats": {
+      "views": 720000,
+      "likes": 61000,
+      "comments": 1900,
+      "shares": 5100,
+      "hoursSincePost": 960
+    },
+    "hashtags": ["#kimchi", "#friedrice", "#korean", "#quickrecipe", "#dinner"],
+    "recipeScore": 0.91,
+    "recipeScoreBreakdown": {
+      "perf": 0.88,
+      "act": 0.96,
+      "rec": 0.84,
+      "total": 0.91
+    },
+    "embedHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@KoreanFoodBae/video/012\"><section></section></blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>"
+  },
+  {
+    "id": "video_5",
+    "platformId": "yt_mno345",
+    "creatorId": "creator_3",
+    "url": "https://youtube.com/shorts/mno345",
+    "title": "Best Carne Asada Tacos",
+    "description": "Restaurant-quality carne asada tacos at home! Marinate flank steak in lime juice, garlic, cilantro, cumin for 2 hours. Grill on high heat for 3-4 minutes per side. Slice thin, serve in tortillas with onions, cilantro, and lime. Serves 4. Grilling time: 8 minutes.",
+    "publishedAt": "2024-10-20T16:00:00Z",
+    "durationSec": 57,
+    "stats": {
+      "views": 540000,
+      "likes": 45000,
+      "comments": 1500,
+      "shares": 3900,
+      "hoursSincePost": 480
+    },
+    "hashtags": ["#carneasada", "#tacos", "#mexican", "#grilling", "#recipe"],
+    "recipeScore": 0.92,
+    "recipeScoreBreakdown": {
+      "perf": 0.87,
+      "act": 0.97,
+      "rec": 0.88,
+      "total": 0.92
+    },
+    "embedHtml": "<iframe width=\"315\" height=\"560\" src=\"https://www.youtube.com/embed/mno345\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+  },
+  {
+    "id": "video_6",
+    "platformId": "tt_pqr678",
+    "creatorId": "creator_4",
+    "url": "https://tiktok.com/@CurryCraze/video/678",
+    "title": "30-Minute Butter Chicken",
+    "description": "Creamy butter chicken that tastes like it took hours! Marinate chicken in yogurt and spices for 15 minutes. Cook in butter with onions, garlic, ginger for 5 minutes. Add tomatoes, cream, garam masala. Simmer 20 minutes. Serve with rice or naan. Serves 4.",
+    "publishedAt": "2024-10-12T13:30:00Z",
+    "durationSec": 60,
+    "stats": {
+      "views": 810000,
+      "likes": 69000,
+      "comments": 2100,
+      "shares": 5600,
+      "hoursSincePost": 840
+    },
+    "hashtags": ["#butterchicken", "#indian", "#curry", "#recipe", "#dinner"],
+    "recipeScore": 0.95,
+    "recipeScoreBreakdown": {
+      "perf": 0.91,
+      "act": 0.98,
+      "rec": 0.86,
+      "total": 0.95
+    },
+    "embedHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@CurryCraze/video/678\"><section></section></blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>"
+  },
+  {
+    "id": "video_7",
+    "platformId": "yt_stu901",
+    "creatorId": "creator_5",
+    "url": "https://youtube.com/shorts/stu901",
+    "title": "Perfect Sushi Rice Every Time",
+    "description": "Master sushi rice with this simple method! Rinse rice 3 times, cook with 1:1.1 water ratio. Mix rice vinegar, sugar, salt while rice is hot. Fold gently to coat evenly. Let cool to room temperature. Makes enough for 4 rolls. Prep time: 30 minutes.",
+    "publishedAt": "2024-09-30T11:00:00Z",
+    "durationSec": 55,
+    "stats": {
+      "views": 680000,
+      "likes": 58000,
+      "comments": 1700,
+      "shares": 4800,
+      "hoursSincePost": 1080
+    },
+    "hashtags": ["#sushi", "#sushirice", "#japanese", "#recipe", "#cooking"],
+    "recipeScore": 0.90,
+    "recipeScoreBreakdown": {
+      "perf": 0.86,
+      "act": 0.94,
+      "rec": 0.82,
+      "total": 0.90
+    },
+    "embedHtml": "<iframe width=\"315\" height=\"560\" src=\"https://www.youtube.com/embed/stu901\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+  }
+]
