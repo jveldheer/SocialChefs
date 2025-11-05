@@ -18,13 +18,15 @@ Add these environment variables in your Vercel project settings:
 
 ```
 DEMO_MODE=true
-DATABASE_URL=file:./data/social-chef.db
 ```
+
+That's it! The app will automatically detect Vercel's read-only serverless environment and use an in-memory SQLite database with demo data.
 
 ### Important Notes
 
-- **Remove or ignore vercel.json**: The root-level `vercel.json` may conflict with proper monorepo detection. Vercel's automatic configuration works best for Turborepo monorepos.
-- **Database**: In production on Vercel, you'll need to use a serverless-compatible database like Turso (LibSQL) since Vercel's serverless functions don't support persistent file storage for SQLite. For demo purposes with `DEMO_MODE=true`, the in-memory fallback will work.
+- **In-Memory Database**: When deployed to Vercel, the app automatically detects the read-only file system and uses an in-memory SQLite database. This is seeded with demo data when `DEMO_MODE=true`.
+- **Data Persistence**: Note that in-memory data resets on each serverless function cold start. For persistent data in production, see the Turso configuration below.
+- **No vercel.json Needed**: The app works best without a root-level `vercel.json`. Vercel's automatic Turborepo detection handles everything.
 
 ### Steps to Deploy
 
