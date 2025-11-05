@@ -1,15 +1,14 @@
 import Link from 'next/link';
 import { getDb, recipes as recipesTable } from '@ultimate-social-chef/db';
-import { desc } from 'drizzle-orm';
 import type { Recipe } from '@ultimate-social-chef/shared';
 
 export const dynamic = 'force-dynamic';
 
 async function getRecipes(): Promise<Recipe[]> {
   const db = getDb();
-  const results = await db.select().from(recipesTable).orderBy(desc(recipesTable.createdAt));
+  const results = await db.select().from(recipesTable);
 
-  return results.map((r) => ({
+  const parsed = results.map((r) => ({
     ...r,
     ingredients: JSON.parse(r.ingredients as string),
     steps: JSON.parse(r.steps as string),
@@ -18,6 +17,9 @@ async function getRecipes(): Promise<Recipe[]> {
     nutrition: r.nutrition ? JSON.parse(r.nutrition as string) : null,
     confidence: JSON.parse(r.confidence as string),
   })) as Recipe[];
+
+  // Sort by created date (newest first) in JavaScript to avoid drizzle-orm type conflicts
+  return parsed.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 }
 
 export default async function RecipesPage() {

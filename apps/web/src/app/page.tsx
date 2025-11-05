@@ -1,24 +1,22 @@
 import Link from 'next/link';
 import { getDb, creators } from '@ultimate-social-chef/db';
-import { desc } from 'drizzle-orm';
 import type { Creator } from '@ultimate-social-chef/shared';
 
 export const dynamic = 'force-dynamic';
 
 async function getTopCreators(): Promise<Creator[]> {
   const db = getDb();
-  const results = await db
-    .select()
-    .from(creators)
-    .orderBy(desc(creators.creatorScore))
-    .limit(25);
+  const results = await db.select().from(creators);
 
-  return results.map((c) => ({
+  const parsed = results.map((c) => ({
     ...c,
     creatorScoreBreakdown: c.creatorScoreBreakdown
       ? JSON.parse(c.creatorScoreBreakdown as string)
       : null,
   })) as Creator[];
+
+  // Sort by creator score (highest first) and limit to 25 in JavaScript to avoid drizzle-orm type conflicts
+  return parsed.sort((a, b) => b.creatorScore - a.creatorScore).slice(0, 25);
 }
 
 function DemoBanner() {

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getDb, creators, videos } from '@ultimate-social-chef/db';
-import { eq } from 'drizzle-orm';
 import type { Creator, Video } from '@ultimate-social-chef/shared';
 
 export const dynamic = 'force-dynamic';
@@ -11,18 +10,15 @@ async function getCreatorWithVideos(
 ): Promise<{ creator: Creator; videos: Video[] } | null> {
   const db = getDb();
 
-  const [creatorData] = await db
-    .select()
-    .from(creators)
-    .where(eq(creators.id, id))
-    .limit(1);
+  // Fetch all creators and filter in JavaScript to avoid drizzle-orm type conflicts
+  const allCreators = await db.select().from(creators);
+  const creatorData = allCreators.find((c) => c.id === id);
 
   if (!creatorData) return null;
 
-  const videosData = await db
-    .select()
-    .from(videos)
-    .where(eq(videos.creatorId, id));
+  // Fetch all videos and filter in JavaScript to avoid drizzle-orm type conflicts
+  const allVideos = await db.select().from(videos);
+  const videosData = allVideos.filter((v) => v.creatorId === id);
 
   const creator = {
     ...creatorData,

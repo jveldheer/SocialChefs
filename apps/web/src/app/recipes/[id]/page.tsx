@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getDb, recipes as recipesTable, videos } from '@ultimate-social-chef/db';
-import { eq } from 'drizzle-orm';
 import type { Recipe, Video } from '@ultimate-social-chef/shared';
 
 export const dynamic = 'force-dynamic';
@@ -11,19 +10,15 @@ async function getRecipeWithVideo(
 ): Promise<{ recipe: Recipe; video: Video } | null> {
   const db = getDb();
 
-  const [recipeData] = await db
-    .select()
-    .from(recipesTable)
-    .where(eq(recipesTable.id, id))
-    .limit(1);
+  // Fetch all recipes and filter in JavaScript to avoid drizzle-orm type conflicts
+  const allRecipes = await db.select().from(recipesTable);
+  const recipeData = allRecipes.find((r) => r.id === id);
 
   if (!recipeData) return null;
 
-  const [videoData] = await db
-    .select()
-    .from(videos)
-    .where(eq(videos.id, recipeData.videoId))
-    .limit(1);
+  // Fetch all videos and filter in JavaScript to avoid drizzle-orm type conflicts
+  const allVideos = await db.select().from(videos);
+  const videoData = allVideos.find((v) => v.id === recipeData.videoId);
 
   if (!videoData) return null;
 
