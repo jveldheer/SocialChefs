@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 import { getDb, creators } from '@ultimate-social-chef/db';
-import { desc } from 'drizzle-orm';
 
 export const dynamic = 'force-dynamic';
 
@@ -10,7 +9,6 @@ export async function GET() {
     const results = await db
       .select()
       .from(creators)
-      .orderBy(desc(creators.creatorScore))
       .limit(25);
 
     const parsedResults = results.map((c) => ({
@@ -20,7 +18,10 @@ export async function GET() {
         : null,
     }));
 
-    return NextResponse.json(parsedResults);
+    // Sort by creator score in JavaScript to avoid drizzle-orm type conflicts
+    const sorted = parsedResults.sort((a, b) => b.creatorScore - a.creatorScore);
+
+    return NextResponse.json(sorted);
   } catch (error) {
     console.error('Error fetching creators:', error);
     return NextResponse.json(

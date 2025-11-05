@@ -1,13 +1,12 @@
 import { NextResponse } from 'next/server';
 import { getDb, recipes } from '@ultimate-social-chef/db';
-import { desc } from 'drizzle-orm';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
     const db = getDb();
-    const results = await db.select().from(recipes).orderBy(desc(recipes.createdAt));
+    const results = await db.select().from(recipes);
 
     const parsedResults = results.map((r) => ({
       ...r,
@@ -19,7 +18,12 @@ export async function GET() {
       confidence: JSON.parse(r.confidence as string),
     }));
 
-    return NextResponse.json(parsedResults);
+    // Sort by created date (newest first) in JavaScript
+    const sorted = parsedResults.sort((a, b) =>
+      new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+    );
+
+    return NextResponse.json(sorted);
   } catch (error) {
     console.error('Error fetching recipes:', error);
     return NextResponse.json(
