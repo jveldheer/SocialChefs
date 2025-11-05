@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm install && pnpm build --filter=@ultimate-social-chef/web",
+  "buildCommand": "pnpm install && pnpm turbo build --filter=@ultimate-social-chef/web",
   "outputDirectory": "apps/web/.next",
   "installCommand": "pnpm install",
   "framework": null,
