@@ -1,9 +1,10 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "apps/web/package.json",
-      "use": "@vercel/next"
-    }
-  ]
+  "buildCommand": "pnpm install && pnpm build --filter=@ultimate-social-chef/web",
+  "outputDirectory": "apps/web/.next",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "env": {
+    "DEMO_MODE": "true",
+    "DATABASE_URL": "file:./apps/web/data/social-chef.db"
+  }
 }
